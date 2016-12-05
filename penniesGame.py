@@ -14,7 +14,6 @@ def main():
 
 
 def playMatch(match):
-
     display_match_score(match)
 
     if match['games'] > 0:
@@ -34,8 +33,10 @@ def playMatch(match):
 def printDivide():
     print "--------------------"
 
+
 def togglePlayer(player):
     return 'c' if player == 'h' else 'h'
+
 
 def display_match_score(match):
     print "{0} games remaining".format(match['games'])
@@ -67,9 +68,6 @@ def play_game(pennies, turn):
     return play_game(remaining, other_player)
 
 
-
-
-
 def get_move_from_human(n):
     print "HUMAN'S TURN"
 
@@ -85,8 +83,6 @@ def get_move_from_human(n):
 
 def get_move_from_computer(n):
     print "COMPUTER'S TURN"
-
-
 
     return 1
 
